@@ -17,8 +17,10 @@ app.set("view engine","ejs")
     // })
 
 app.get('/',(req,res)=>{
+
+    const name="himal karki"
 // Views vitraa ko file render garnw paya
-    res.render("home")
+    res.render("home",{name:name})
 })
 
 
@@ -30,7 +32,7 @@ app.get('/home',(req,res)=>{
 })
 
 app.get('/about',(req,res)=>{
-    res.render("about.ejs")
+    res.render("about.ejs",{firstName:"Himal",lastName:"karki"})
 })
 
         // app.get('/about',(req,res)=>{
